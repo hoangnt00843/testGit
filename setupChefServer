@@ -107,5 +107,19 @@ de bai
 Note: thống nhất thư mục để tomcat: ~/tomcat
 
 
+Delete chef server :
+sudo chef-server-ctl stop
+sudo chef-server-ctl kill
+sudo chef-server-ctl cleanse
+sudo chef-server-ctl uninstall
+sudo pkill -9 -u opscode
+sudo pkill -9 -f postgres
+sudo pkill -9 -f beam
+sudo pkill -9 -f /opt/chef
+sudo rm -rf /etc/opscode /etc/chef /opt/opscode /opt/chef /var/chef
+sudo rm -rf /etc/chef-server /etc/chef /opt/chef-server /opt/chef /root/.chef /var/opt/chef-server
+sudo rm -rf /var/chef /var/log/chef-server
+sudo rpm -e chef-server
+sudo rpm -e chef-server-core
 
 
